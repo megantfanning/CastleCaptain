@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#mountain {
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid black;
+}
+
+#ball {
+  width: 100px;
+  height: 100px;
+  margin-top: 400px;
+  animation: shapeshift 6s infinite;
+}
+
+@keyframes shapeshift {
+  0%, 100% {
+      transform: translate(0,100);  
+      border-radius: 100px;
+      background-color: yellow;
+  }
+
+  33% {
+    transform: translate(400, 100) scale;
+    border-radius: 100px;
+    background-color: pink;
+  }
+
+  66% {
+      transform: translate(800px, 0) scale(0.5,0.5);
+      border-radius: 100px;
+      background-color: red;
+  }
+}
