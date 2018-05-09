@@ -7,10 +7,14 @@
   height: 80px;
 }
 
+.logo {
+  animation: widdershins infinite 20s linear;
+  height: 80px;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;
-  padding: 20px;
   color: white;
 }
 
@@ -22,27 +26,59 @@
   font-size: large;
 }
 
+.caption{
+  text-align: center;
+}
+
+.captainsLog{
+  background-color: cornsilk;
+  padding: 5px
+}
+
+.sky{
+  background-color:lightskyblue;
+  height: 300px;
+  padding-top:150px
+}
+
+.scenery{
+  background-color:darkgreen;
+  height: 100px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-#mountain {
+@keyframes widdershins {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+#mountainNorth {
+  width: 0; 
+  height: 0; 
+  border-left: 150px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 50px solid darkgreen;
+}
+
+#mountainSouth {
   width: 0; 
   height: 0; 
   border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid black;
+  border-right: 75px solid transparent;
+  border-bottom: 50px solid darkgreen;
 }
 
-#ball {
+#sun {
   width: 100px;
   height: 100px;
-  margin-top: 400px;
-  animation: shapeshift 6s infinite;
+  animation: sunset 20s infinite;
 }
 
-@keyframes shapeshift {
+@keyframes sunset {
   0%, 100% {
       transform: translate(0,100);  
       border-radius: 100px;
