@@ -10,16 +10,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome Castle Captain</h1>
           <div>
-            <div class="d-inline-block">
-              <img src={logo} className="App-logo" alt="logo"/> 
-              <br/>
-              <label> widdershins</label>
-            </div>
-            <div class="d-inline-block">
-              <img src={logo} className="logo" alt="logo" /> 
-              <br/>
-              <label>spin</label>
-            </div>
+            <NavigationButton navClass="spin" label="spin" img={logo}/>
+            <NavigationButton navClass="widdershins" label="widdershins" img={logo}/>
+            <NavigationButton navClass="icon" label="stop" img={logo}/>
           </div>
         </header>
         <div class="sky" >
