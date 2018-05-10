@@ -1,6 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This is a website designed to represent the control panel of Blogothkus' castle (from the Tyranny of Drgaons DnD campaign).
 
-This is a website designed to represent the control panel of Blogothkus' castle (from the Tyranny of Drgaons DnD campaign)
+commands: Anchor, Drift, Spin, Widdershins, Rise, Sink, North, South, East, West.
+
+Some of these commands obviously contradict eachother. You may choose widdershins, spin or neither. (Same logic applies to sink/rise and Anchor/Drift). For directions they may combined these to choose south-west and other non-cardinal directions as a heading but will not be able to select both north and south.
+
+To Run locally: 
+git clone
+yarn build
+yarn start
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Castle Icon courtesy of wikimedia.
 
 ----------------------
 

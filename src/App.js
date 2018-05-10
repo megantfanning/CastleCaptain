@@ -4,6 +4,7 @@ import {NavigationButton, NavigationToggle} from './Navigation';
 import {CaptainsLog} from'./CaptainsLog';
 import './App.css';
 
+//WIP need to set up an array for auto generation of commands
 const commands= [["Anchor","Drift"],["Spin", "Widdershins"], ["Rise", "Sink"],["North", "South"], ["East", "West"]]
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome Castle Captain</h1>
-          <div class="d-flex m-50 align:center">
+          <div class="d-flex align:center">
             <NavigationToggle navAnimation1="spin" label1="Spin" img={logo} navAnimation2="widdershins" label2="Widdershins"/>
             <NavigationToggle navAnimation1="riseIcon" label1="Rise" img={logo} navAnimation2="sinkIcon" label2="Sink"/>
             <NavigationToggle navAnimation1="icon" label1="North" img={logo} navAnimation2="icon" label2="South"/>
