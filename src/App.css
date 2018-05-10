@@ -4,17 +4,18 @@
 
 .spin {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 50px;
 }
 
 .icon {
-  height: 80px;
+  height: 50px;
 }
 
 .widdershins {
   animation: widdershins infinite 20s linear;
-  height: 80px;
+  height: 50px;
 }
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -27,8 +28,9 @@
 
 .App-header {
   background:#222;
-  height: 150px;
+  height: 250px;
   color: white;
+  padding:20px;
 }
 
 .App-title {
@@ -45,7 +47,8 @@
 
 .captainsLog{
   background-color: cornsilk;
-  padding: 5px
+  padding: 5px;
+  text-align: left
 }
 
 .sky{
@@ -61,7 +64,7 @@
 
 .scenery{
   background-color:#355028;
-  height: 100px;
+  height: 75px;
 }
 
 #mountainNorth {
@@ -72,36 +75,43 @@
   border-bottom: 50px solid #355028;
 }
 
-#mountainSouth {
-  width: 0; 
-  height: 0; 
-  border-left: 50px solid transparent;
-  border-right: 75px solid transparent;
-  border-bottom: 50px solid #355028;
-}
-
 #sun {
   width: 100px;
   height: 100px;
+  background-color: yellow;
+  border-radius: 100px;
+  animation: spinSky 10s infinite;
+}
+
+#sunset {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
   animation: sunset 20s infinite;
 }
 
 @keyframes sunset {
   0%, 100% {
-      transform: translate(0,0);  
-      border-radius: 100px;
-      background-color: yellow;
+    transform: translate(0,0);  
+    background-color: yellow;
   }
 
   33% {
     transform: translate(400,0) scale(0.75,0.75);
-    border-radius: 100px;
     background-color:orange;
   }
 
   66% {
-      transform: translate(800px, 100px) scale(0.5,0.5);
-      border-radius: 100px;
-      background-color: red;
+    transform: translate(800px, 75px) scale(0.5,0.5);
+    background-color: red;
+  }
+}
+
+@keyframes spinSky {
+  0% {
+    transform: translate(-100px,0px)scale(0.75,0.75);
+  }
+  100% {
+    transform: translate(1200px, 0px)scale(0.75,0.75);
   }
 }

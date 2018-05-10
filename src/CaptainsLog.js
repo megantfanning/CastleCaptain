@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+// on button press take button label and create a entry to the log
+function createLog(){
+    const newEntry="";
+    return newEntry;
+}
+
 //TODO li's probably need keys here?
 function CaptainsLog(props){
     const intro =[ "Landed in Parnas to take on crew","Began Voyage, fair eastward winds",];
