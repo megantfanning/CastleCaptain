@@ -1,19 +1,46 @@
 .App {
   text-align: center;
 }
-
+.icon {
+  height: 50px;
+}
+/* animated icons */
 .spin {
   animation: App-logo-spin infinite 20s linear;
   height: 50px;
 }
-
-.icon {
-  height: 50px;
-}
-
 .widdershins {
   animation: widdershins infinite 20s linear;
   height: 50px;
+}
+.driftIcon{
+  height: 50px;
+  animation: drift infinite 20s;
+}
+.riseIcon{
+  height: 50px;
+  animation: float reverse infinite 20s;
+}
+.sinkIcon{
+  height: 50px;
+  animation: float infinite 20s;
+}
+@keyframes drift {
+  0%,100% {
+    transform: translate(0px,0px);
+  }
+  50% {
+    transform: translate(10px, 0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px,-10px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+  }
 }
 
 @keyframes App-logo-spin {
@@ -26,6 +53,7 @@
   to { transform: rotate(0deg); }
 }
 
+/* App styling */
 .App-header {
   background:#222;
   height: 250px;
@@ -51,6 +79,7 @@
   text-align: left
 }
 
+/*Background Styling*/
 .sky{
   background:linear-gradient(#123d88, lightskyblue);
   height: 200px;
@@ -115,3 +144,4 @@
     transform: translate(1200px, 0px)scale(0.75,0.75);
   }
 }
+
